@@ -55,19 +55,35 @@ Next recommended actions
 
 Proposed research steps (project summary)
 -
-The following high-level research activities summarize the planned work for the Unity-BSP / BBS project. As activities become active, individual items can be promoted into `docs/proposals/` or `docs/active/` with metadata `status: active`.
+The following ordered research activities represent a recommended sequence for Unity-BSP / BBS work. Each item includes explicit dependencies to make activation and scheduling deterministic. When an activity is activated, add YAML front-matter (title, slug, status, owner, date, tags) and move or copy its document into `docs/active/` or `docs/proposals/`.
 
-- Unity foundations: project architecture, coordinate conventions, scale and scene organization.
-- Modeling workflows: evaluate Unity-native vs external DCC pipelines (Blender, CAD, ProBuilder) and recommend standards.
-- Measurement & spatial fidelity: measurement protocols, unit standards, and tolerance validation.
-- LIDAR & capture pipelines: scan planning, point-cloud preprocessing, surface reconstruction, and export to FBX/glTF.
-- CAD translation & BIM interfaces: scan-to-BIM and mesh→CAD approaches, export conventions for Unity.
-- Materials & lighting: PBR workflows, lighting validation, and performance trade-offs.
-- Asset governance: repository structure, naming conventions, Git LFS policy, and intake procedures.
-- Mechanical articulation: modeling and validation of hinged/rigged stage components.
-- QA, benchmarking & handoff: validation reports, LOD/performance tests, and documentation packages for handoff.
+1. Unity foundations: project architecture, coordinate conventions, canonical units, and scene organization.
+	- Dependencies: none (foundational).
 
-When a research activity is activated, we recommend adding YAML front-matter (title, slug, status, owner, date, tags) and either moving or copying the document into `docs/active/` or `docs/proposals/` as appropriate so it becomes discoverable and addressable for work assignment and automation.
+2. Measurement & spatial fidelity: manual measurement verification, unit standards, tolerance definitions, and control-point procedures.
+	- Dependencies: Unity foundations.
+
+3. Modeling workflows: evaluate Unity-native vs external DCC pipelines (Blender, CAD, ProBuilder), recommend standards and export conventions.
+	- Dependencies: Unity foundations; Measurement & spatial fidelity (for scale/tolerances).
+
+4. LIDAR & capture pipelines: scan planning, point-cloud capture, registration, preprocessing, and surface reconstruction.
+	- Dependencies: Measurement & spatial fidelity; Modeling workflows (to match expected outputs).
+
+5. CAD translation & BIM interfaces: scan-to-BIM, mesh→CAD conversion, and export conventions (DWG/DXF/FBX/glTF) for Unity import.
+	- Dependencies: LIDAR & capture pipelines; Modeling workflows.
+
+6. Materials & lighting: capture/bake textures, define PBR pipeline, lighting validation and performance trade-offs.
+	- Dependencies: Modeling workflows; CAD translation (for accurate geometry and UVs).
+
+7. Asset governance: repository structure, naming conventions, Git LFS policy, intake procedures, and import settings for Unity.
+	- Dependencies: Unity foundations; Modeling workflows.
+
+8. Mechanical articulation: model and validate hinged or rigged stage components and pivot conventions.
+	- Dependencies: Modeling workflows; CAD translation.
+
+9. QA, benchmarking & handoff: generate validation reports, LODs, performance benchmarks, and produce documentation packages for handoff.
+	- Dependencies: All previous items (final validation stage).
+
 
 Contact
 -
