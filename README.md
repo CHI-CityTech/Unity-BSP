@@ -35,6 +35,7 @@ Repository contents (high-level)
 - `docs/proposals/` — converted proposal and SoW documents (primary project text)
 - `docs/originals/` — original source `.docx` files (archival)
 - `docs/assets/` — extracted assets and media associated with converted docs
+ - `docs/research/` — research artifacts, scans, processed pointclouds, and QA reports
 - `Scripts/` — helper scripts used during initial import and processing workflows
 - `requirements.txt` — optional Python dependencies for local fallback tools
 
