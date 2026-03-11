@@ -57,17 +57,17 @@ Proposed research steps (project summary)
 -
 The following ordered research activities represent a recommended sequence for Unity-BSP / BBS work. Each item includes explicit dependencies to make activation and scheduling deterministic. When an activity is activated, add YAML front-matter (title, slug, status, owner, date, tags) and move or copy its document into `docs/active/` or `docs/proposals/`.
 
-1. Unity foundations: project architecture, coordinate conventions, canonical units, and scene organization.
-	- Dependencies: none (foundational).
+1. LIDAR & capture pipelines: scan planning, point-cloud capture, registration, preprocessing, and surface reconstruction.
+	- Dependencies: none (can be researched and piloted immediately). Mark this activity as `status: active` while piloting.
 
-2. Measurement & spatial fidelity: manual measurement verification, unit standards, tolerance definitions, and control-point procedures.
-	- Dependencies: Unity foundations.
+2. Unity foundations: project architecture, coordinate conventions, canonical units, and scene organization.
+	- Dependencies: LIDAR & capture pipelines (preferred to validate import and alignment workflows) but can proceed in parallel for core decisions.
 
-3. Modeling workflows: evaluate Unity-native vs external DCC pipelines (Blender, CAD, ProBuilder), recommend standards and export conventions.
+3. Measurement & spatial fidelity: manual measurement verification, unit standards, tolerance definitions, and control-point procedures.
+	- Dependencies: LIDAR & capture pipelines; Unity foundations.
+
+4. Modeling workflows: evaluate Unity-native vs external DCC pipelines (Blender, CAD, ProBuilder), recommend standards and export conventions.
 	- Dependencies: Unity foundations; Measurement & spatial fidelity (for scale/tolerances).
-
-4. LIDAR & capture pipelines: scan planning, point-cloud capture, registration, preprocessing, and surface reconstruction.
-	- Dependencies: Measurement & spatial fidelity; Modeling workflows (to match expected outputs).
 
 5. CAD translation & BIM interfaces: scan-to-BIM, mesh→CAD conversion, and export conventions (DWG/DXF/FBX/glTF) for Unity import.
 	- Dependencies: LIDAR & capture pipelines; Modeling workflows.
@@ -83,6 +83,10 @@ The following ordered research activities represent a recommended sequence for U
 
 9. QA, benchmarking & handoff: generate validation reports, LODs, performance benchmarks, and produce documentation packages for handoff.
 	- Dependencies: All previous items (final validation stage).
+
+Fallback and iteration note
+-
+If the LIDAR pilot shows that capture-to-import fidelity or automation targets are not achievable, the team will revise the capture/import workflow and pivot to strengthened manual-measurement and CAD-assisted processes. Document the decision and rationale in `docs/research/qa/` and update the activity `status` accordingly.
 
 
 Contact
