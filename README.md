@@ -53,6 +53,22 @@ Next recommended actions
 	linking all proposals for discoverability.
 - Add lightweight templates to make future proposals consistent and addressable.
 
+Proposed research steps (project summary)
+-
+The following high-level research activities summarize the planned work for the Unity-BSP / BBS project. As activities become active, individual items can be promoted into `docs/proposals/` or `docs/active/` with metadata `status: active`.
+
+- Unity foundations: project architecture, coordinate conventions, scale and scene organization.
+- Modeling workflows: evaluate Unity-native vs external DCC pipelines (Blender, CAD, ProBuilder) and recommend standards.
+- Measurement & spatial fidelity: measurement protocols, unit standards, and tolerance validation.
+- LIDAR & capture pipelines: scan planning, point-cloud preprocessing, surface reconstruction, and export to FBX/glTF.
+- CAD translation & BIM interfaces: scan-to-BIM and mesh→CAD approaches, export conventions for Unity.
+- Materials & lighting: PBR workflows, lighting validation, and performance trade-offs.
+- Asset governance: repository structure, naming conventions, Git LFS policy, and intake procedures.
+- Mechanical articulation: modeling and validation of hinged/rigged stage components.
+- QA, benchmarking & handoff: validation reports, LOD/performance tests, and documentation packages for handoff.
+
+When a research activity is activated, we recommend adding YAML front-matter (title, slug, status, owner, date, tags) and either moving or copying the document into `docs/active/` or `docs/proposals/` as appropriate so it becomes discoverable and addressable for work assignment and automation.
+
 Contact
 -
 For project coordination, contact the supervising faculty listed inside the
