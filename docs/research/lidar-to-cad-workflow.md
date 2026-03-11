@@ -19,6 +19,19 @@ Capture planning
 - Coverage: plan scan positions to avoid occlusions; capture overlapping scans with 30–60% overlap for reliable registration.
 - Metadata: record device, timestamp, coordinate system, and any control survey points (measured targets) used for registration.
 
+Mobile (iPhone/iPad) LIDAR apps — practical options to pilot
+-
+For quick room-scale capture and rapid prototyping, modern iPhone and iPad devices with LiDAR sensors are convenient. The following apps are commonly used and worth piloting for LG-38 captures; evaluate each for export formats, scale fidelity, and metadata preservation.
+
+- Polycam — versatile mobile LiDAR + photogrammetry app. Exports meshes and point clouds (OBJ, PLY, GLB/GLTF, FBX in paid tiers). Good for room-scale meshes and quick capture; test scale accuracy and export pipeline.
+- Scaniverse — mobile capture app that produces meshes and point clouds (PLY/OBJ). Simple workflow and free tier; useful as a comparison to Polycam.
+- 3d Scanner App (Laan Labs) — offers LiDAR capture and export options; supports mesh and point-cloud exports.
+- Canvas (Occipital) — focused on interior scanning and producing floorplans/measurements; useful if you need Revit/IFC-friendly outputs via their services or exports.
+- RoomScan LiDAR / Magicplan — mobile apps optimized for producing measured floorplans, less for detailed meshes; useful for rapid plan capture and control measurements.
+- Matterport Capture — high-quality capture workflow with cloud processing and commercial export options; good for polished deliverables but requires account and may incur costs.
+
+Pilot guidance: start with `Polycam` and `Scaniverse` for mesh/point-cloud exports plus one floorplan-oriented app (e.g., `RoomScan LiDAR`) to cross-check distances and room layout. For each app record export format, measured scale checks, and any required post-processing steps.
+
 Point cloud data formats and storage
 -
 - Preferred raw formats: E57 for scanned datasets, LAS/LAZ for LiDAR point clouds, and vendor RAW (where available). Keep original files in `docs/originals/scans/` for archival.
