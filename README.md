@@ -1,36 +1,42 @@
 # Unity-BSP — CHI Digital Twin Foundations
 
-This repository contains the Unity-based foundations and documentation for the CHI Studios (LG-38) digital twin and associated BSPT stage research.
+Scope
+-
+This repository contains foundational research, standards, and reference materials for constructing a Unity-based digital twin of CHI Studios (LG-38) and the BSPT stage. The work focuses on creating reproducible engineering practices for
+- room-scale modeling, measurement and spatial fidelity, CAD-to-Unity translation,
+- asset governance, lighting/material workflows, and basic mechanical articulation
+	relevant to blended performance research.
 
-Quick start:
+Relation to broader initiatives
+-
+This project supports and integrates with CHI research initiatives including BRSP, BBS, and BSP by providing a documented pipeline for mapping physical spaces into Unity and by establishing engineering standards that enable reproducible blended-space experiments.
 
-- Converted proposals and SoWs: `docs/proposals/`
-- Original `.docx` sources: `docs/originals/`
-- Extracted media from conversions: `docs/assets/<slug>/`
-- Conversion tools: `scripts/convert_docx.sh`, `scripts/convert_docx_auto.sh`, `scripts/convert_docx_mammoth.py`
+Repository contents (high-level)
+-
+- `docs/proposals/` — converted proposal and SoW documents (primary project text)
+- `docs/originals/` — original source `.docx` files (archival)
+- `docs/assets/` — extracted assets and media associated with converted docs
+- `Scripts/` — helper scripts used during initial import and processing workflows
+- `requirements.txt` — optional Python dependencies for local fallback tools
 
-Convert a `.docx` to Markdown (recommended):
+How to use this repository
+-
+- Read the documents in `docs/proposals/` to understand scope, deliverables,
+	and task breakdowns.
+- Use the per-document assets in `docs/assets/<slug>/` when assembling
+	reference materials or visual documentation.
+- Propose changes via GitHub: open an issue for major changes or submit a
+	pull request for small edits to documentation.
 
-```bash
-# using pandoc (recommended)
-brew install pandoc
-./scripts/convert_docx.sh docs/originals/your-file.docx
+Next recommended actions
+-
+- Standardize document metadata (YAML front-matter) and create `docs/index.md`
+	linking all proposals for discoverability.
+- Add lightweight templates to make future proposals consistent and addressable.
 
-# or automatic chooser (uses pandoc if present, otherwise Python fallback)
-./scripts/convert_docx_auto.sh docs/originals/your-file.docx
-```
+Contact
+-
+For project coordination, contact the supervising faculty listed inside the
+project proposals or open an issue in this repository.
 
-If you use the Python fallback, install dependencies:
-
-```bash
-python3 -m pip install -r requirements.txt
-```
-
-Where to start:
-
-- Read the converted proposals in `docs/proposals/`.
-- Review `docs/README.md` for conversion specifics.
-
-If you'd like, I can tidy the Markdown further (add YAML front-matter, convert numbered items to proper ordered lists, or create `docs/index.md`).
-# Unity-BSP
 The repository that has the Unity Project extension
