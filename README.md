@@ -7,9 +7,28 @@ This repository contains foundational research, standards, and reference materia
 - asset governance, lighting/material workflows, and basic mechanical articulation
 	relevant to blended performance research.
 
-Relation to broader initiatives
+Relation to broader initiatives (BBS / BRSP / BSP)
 -
-This project supports and integrates with CHI research initiatives including BRSP, BBS, and BSP by providing a documented pipeline for mapping physical spaces into Unity and by establishing engineering standards that enable reproducible blended-space experiments.
+This repository is explicitly aligned with the Balanced Blended Space (BBS) research initiative and complements related CHI efforts such as BRSP and BSP. The Unity-BSP project creates a reproducible research environment for investigating spaces that are both "blended" (virtual and physical layers co-exist and interact) and "balanced" (designs that give equivalent experimental weight to both virtual and physical realities).
+
+Research focus and goals:
+
+- Define and validate engineering practices that preserve spatial and
+	behavioral parity between physical and virtual representations.
+- Establish measurable criteria for "balance" between virtual and
+	physical layers (e.g., parity of interaction, perceptual equivalence,
+	and functional interchangeability).
+- Provide reproducible pipelines for measurement, CAD translation,
+	asset governance, and lighting/material workflows that support BBS
+	experiments.
+- Serve as a shared platform for staged experiments that compare
+	participant responses, system performance, and alignment strategies
+	across virtual-only, physical-only, and blended conditions.
+
+This repository is intended as the technical foundation for BBS-style
+experiments: standardized inputs (floorplans, CAD exports, measurements),
+repeatable conversion and import steps, and documented deliverables that
+make results comparable across iterations and researchers.
 
 Repository contents (high-level)
 -
