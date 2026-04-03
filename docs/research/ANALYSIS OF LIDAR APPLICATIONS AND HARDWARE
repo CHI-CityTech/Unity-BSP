@@ -1,0 +1,48 @@
+ANALYSIS OF LIDAR APPLICATIONS AND HARDWARE  
+(Name)  
+(Date)
+
+This engineering analysis evaluates the various resources documented for generating and importing 3D assets into Unity, focusing on technical capabilities, optimization potential, cost, and workflow efficiency.1. 3D Scanning Applications (Asset Generation)
+
+The mobile applications reviewed are primarily used for generating 3D meshes from real-world objects using LiDAR or photogrammetry. The key difference among them for an engineering pipeline is the accessibility of export formats (FBX, OBJ, STL) and processing speed.
+
+TABLE 1 \- SOFTWARE SCANNING TOOLS
+
+| Software | Key Technology/Focus | Export Formats (Unity Compatible) | Performance/Processing | Cost/Accessibility |
+| ----- | ----- | ----- | ----- | ----- |
+| **Scaniverse** | 3D scanning objects/environments | FBX, OBJ, STL, GLB, USDZ[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit) | Better and faster scanning/exporting. On-device processing (works offline).[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit) | Everything is free.[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit) |
+| **PolyCam** | AI-powered LiDAR/Photos scanning | Pro plan offers OBJ, STL, FBX, PDF. Free plan is GLTF only.[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit) | Requires internet for cloud processing, which can take up to at least 10 minutes.[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit) | Free plan is limited (20 captures). Pro plan starts at $17.99/month.[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit) |
+| **RealityScan** | Photogrammetry, high-detail focus | FBX, OBJ, GLB/GLTF, USDZ[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit) | Uses cloud processing for higher detail, requires internet and is more complex processing.[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit) | Free. Good for game development and beginners.[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit) |
+| **KIRI Engine** | Photogrammetry, LiDAR, Neural Surface Reconstruction (NSR)[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit) |  (Supports FBX and NSR handles difficult surfaces like shiny metal/glass).[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit) | LiDAR is faster for rooms; Photogrammetry produces very detailed meshes.[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit) | Photo Scan and LiDar Scan are free. Pro plan is $17.99/month.[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit) |
+| **3D Scanner App** | LiDAR mesh capture, real-time mesh viewing[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit) | OBJ, STL, USDZ, GLB/GLTF.[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit) | Excellent for rooms, large interiors, and construction spaces.[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit) | Requires subscription ($4.99/week or $69.99/year) to scan.[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit) |
+
+**Assessment of Scanning Tools:**
+
+For a free, unconstrained pipeline, **Scaniverse** is the most viable option due to its free use of Unity-compatible export formats and faster, offline processing. **PolyCam** offers higher-end features and larger capture limits (up to 2000 images in Pro), but these require a significant subscription fee to access standard formats like FBX. RealityScan is free but relies on complex cloud processing for detail.2. Pipeline Optimization Tools (Data Preparation for Unity)[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit)
+
+Optimizing 3D models—especially large CAD files—is critical for real-time engine performance in Unity.
+
+| Software | Core Function | CAD Optimization Capability | Animation/Rigging | Cost |
+| ----- | ----- | ----- | ----- | ----- |
+| **PIXYZ** | Conversion and pipeline optimization for real-time engines.[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit) | Specializes in geometry optimization for CAD data and efficiently handles larger datasets better than Blender. Imports CAD, BIM, mesh, and point cloud models.[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit) | Cannot rig, skin, create maps, or edit animations. Can only import, export, and play animations.[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit) | $2,450 per year.[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit) |
+| **Blender** | Free, open-source 3D generalist software.[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit) | Good for optimization, flexible. Less specialized and less efficient than Pixyz for extremely large CAD datasets.[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit) | Necessary for editing animations, rigging, skinning, and creating maps.[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit) | Free.[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit) |
+
+**Assessment of Optimization Tools:**
+
+**PIXYZ** is the professional-grade, specialized solution for optimizing large engineering CAD data before import into Unity. It is necessary for handling complex CAD/BIM models. **Blender** serves as a flexible, free, and open-source alternative that provides necessary features (like animation editing) that PIXYZ lacks. The choice depends on budget and the source data complexity, but Blender is generally favored by more sources.3. Workflows Analysis[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit)
+
+Three primary workflows are proposed, varying in source data and optimization level for real-time performance:
+
+1. **Scanned Object Workflow:**  
+   * **Pipeline:** Scan App (FBX/OBJ) $\\rightarrow$ Blender (Optimization) $\\rightarrow$ Unity.[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit)  
+   * **Analysis:** This is a validated workflow that uses Blender to ensure the scanned mesh is properly optimized (e.g., poly reduction) before final export to Unity. This is generally the best approach for scanned objects, especially if using a free scanning tool.[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit)  
+2. **CAD Data Workflow (Optimized):**  
+   * **Pipeline:** CAD File (e.g., Fusion 360 export to STEP/FBX/OBJ) $\\rightarrow$ PIXYZ (Optimization) $\\rightarrow$ Unity.[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit)  
+   * **Analysis:** This is the recommended pipeline for CAD files, as PIXYZ is specifically designed to manage and optimize large CAD data for real-time environments.[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit)  
+3. **Direct CAD Import Workflow (Unoptimized):**  
+   * **Pipeline:** Fusion 360 (FBX) $\\rightarrow$ Unity.[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit)  
+   * **Analysis:** While achievable, this is **not greatly optimized**. Directly exporting FBX from Fusion 360 and importing into Unity is not real-time friendly as it retains too many polygons and requires manual merging of parts, making the model too detailed for efficient real-time use. Using Blender to optimize the FBX export first is suggested as a better fix.[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit)  
+4. **AI Generation Workflow (Fastest Prototyping):**  
+   * **Pipeline:** AI Tools (Meshy, Luma AI) $\\rightarrow$ Unity.[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit)  
+   * **Analysis:** This is the **fastest workflow** for generating or enhancing 3D models. AI can handle poly reduction and generate UVs/textures. It is best suited for prototyping due to offering the least control over the final geometry.[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit)
+
