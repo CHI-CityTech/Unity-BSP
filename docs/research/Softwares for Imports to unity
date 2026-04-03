@@ -1,0 +1,195 @@
+  
+**PolyCam:**  
+Polycam is an AI-powered 3D scanning app that uses LiDAR or photos to create detailed 3D models from mobile devices
+
+\-Can be used on IOS, Android and the web  
+\-Captures instant, accurate, high-quality 3d models of any object by 3d scanning  
+\-Supports unlimited LiDar and room mode captures and editing tools, with watermarked outputs(can edit and refine your 3d models)  
+\-Built in LiDar sensor  
+\-Allows web link sharing  
+\-Offers capture objects with 100 images per capture  
+\-Offers 20 objects captured  
+\-Community and tutorial video resources for learning and support  
+\-Free plan offers 20 objects captured  
+\-The free plan only offers GLTF export format
+
+\-The pro plan subscription offers extreme accuracy and real time 3d scanning  
+\-The pro plan offers 12+ export formats including OBJ, STL, FBX AND PDF  
+\-The pro plan offers no video watermarks  
+\-The pro plan starts at $17.99  
+\-Generates captures with up to 30 minutes of video  
+\-Instantly generates building floor plan and measurements  
+\-The pro plan offers unlimited objects captured  
+\-The pro plan offers larger Photogrammetry captures with up to 2000 images per capture  
+\-Captures can be shared to other users on Polycam  
+\-Improved Gaussian splatting with up to 1000 images per splat  
+\-I can’t export to FBX, STL, OBJ, etc till I get the paid subscription  
+\-It’s saying 1 month for $29.99 or 12 months for $149.99  
+\-It also offers a 7 days free trial.
+
+**Scaniverse:**  
+Another app that allows you to create 3d scans of objects and environments
+
+\-Everything is free  
+\-Export formats include FBX, OBJ, STL, GLB, USDZ   
+\-Unlimited 3d scans  
+\-Exporting models for 3D/AR/VR workflows  
+\-On-device processing (no cloud required)  
+\-Works offline, not through the cloud and is faster  
+\-Share scans online  
+\-Offers less tools than Polycam   
+\-The interface is simpler  
+\-Strong AR visualization  
+\-Better and faster in terms of scanning and exporting the model  
+\-Mainly IOS support with newer android support
+
+I’m having a hard time navigating through this app as it won’t let me scan and giving me messages  
+ 
+
+**3D Scanner App:**  
+Another app that lets you scan real objects and spaces and turn them into 3d models
+
+\-Just like polycam it combines many pictures and turns those images into 3d meshes  
+\-With built in LiDar sensor it builds the mesh while you scan  
+\-By showing you the model live on screen, you get to see the missing holes or missing areas which many apps don’t show clearly  
+\-Room and object scanning  
+\-Point-cloud and LiDar mesh capture  
+\-Great for rooms, large interiors and construction spaces  
+\-Generate accurate measurements from the scan  
+\-Mainly used by architects  
+\-Export formats such as OBJ, STL, USDZ, GLB/GLTF  
+\-There’s $4.99/week and $69.99/year subscription as well as 7 days free trial  
+\-Can’t scan without paying first  
+\-Interface simplistic  
+\-Fairly easy workflow  
+\-IOS support
+
+I can’t even test out the app because of the subscription feature
+
+**KIRI Engine:**  
+More advanced phone based 3d scanning apps
+
+\-Several scanning techniques include photogrammetry, LiDar scanning, and a featureless object mode using Neural Surface Reconstruction (NSR)  
+\-Photogammetry produces very detailed meshes  
+\-Great for small objects  
+\-LiDar scanning gives faster scanning  
+\-Better for rooms and large areas  
+\-Object mode scans things with shiny metal, glass and reflective surfaces (things that fail with photogrammetry)  
+\-A variety of advanced AI features  
+\-Auto object masking (removing background automatically)  
+\-PBR texture generation  
+\-Auto-rigging for animation  
+\-The pro plan is $47.99-$79.99/year or $17.99/month  
+\-The Photo Scan and LiDar Scan is free  
+\-The Featureless Object Scan and 3DGS Scan (with mesh) is part of the pro plan  
+\-Not letting me scan because of photos permissions message
+
+**RealityScan:**  
+Another mobile app that lets you scan real world objects and converting them into 3d models
+
+\-Uses lots of photos and cloud processing to reconstruct the object  
+\-It’s free and made by epic games  
+\-Good for game development  
+\-Used in professional game and VFX studios  
+\-Versatile in the virtual environment  
+\-Uses photogrammetry  
+\-Creates very realistic textures and geometry  
+\-Needs internet processing and more complex processing but higher detail  
+\-FBX, OBJ, GLB/GLTF, USDZ  
+\-Good for beginners  
+\-While scanning, the app shows camera position and coverage so you know which parts of the object needs more scanning  
+\-Can’t scan shiny, clear and plain objects  
+\-Can share your model on sketchfab and sell it  
+\-Not letting me scan because of photos permissions message
+
+**PIXYZ:**  
+\-Software that allows CAD models to be brought into video game engines like UNITY, UNREAL ENGINE, etc  
+\-Pixyz is not a scanning tool but its a pipeline optimization tool that optimizes CAD models for real time engines  
+\-Pixyz can handle these large CAD data/files and import those models into UNITY  
+\-Can import CAD, BIM, mesh and point cloud models  
+\-It preserves geometry, hierarchy, materials and metadata  
+\-Does not directly support fusion 360 but you can export your model from fusion 360 into a format pixyz supports(STEP, FBX, OBJ, IGES, GLTF) and then import it into pixyz  
+\-Pixyz can run scripts and batch processing using APIs  
+\-Turning engineering CAD into VR showrooms  
+\-Creating digital twins  
+\-Converting product models into interactive configurators
+
+**Part 2: Workflows**
+
+\-PIXYZ can import GLTF format files on certain versions and with some limitations  
+\-Version 2.0 allows GLTF and imports and exports, as well as GLB  
+\-Optional but you can convert GLTF files to a compatible format first to import
+
+\-For the first workflow, when you scan your object, you can import to blender if it’s an FBX file, then export to unity  
+\-If it’s a cad file, it would have to be taken to Pixyz first  
+\-Either option is valid
+
+\-Blender is free and open source while Pixyz is $2,450 per year  
+\-Blender’s interface is more complex and Pixyz has a more simpler interface for optimization tasks  
+\-Pixyz specializes in geometry optimization for cad data and is optimized in handling larger datasets efficiently better than Blender; Blender is still good too but not better  
+\-Blender is flexible  
+\-More sources are leaning on using Blender
+
+\-For the second workflow, you can start with a cad file and then use Pixyz to optimize it to take it to unity  
+\-Apparently you can also export a FBX from fusion 360 into unity, as seen in a youtube video  
+\-It’s achievable but not greatly optimized  
+\-Reducing detail like, too many polys and merging parts  
+\-It is not real time friendly  
+\-So exporting FBX from fusion 360 to Blender to optimize it, then taking it to unity would be better fix
+
+\-For the third workflow, there are AI tools that can generate or enhance 3D models  
+\-Meshy and Luma AI are two examples  
+\-AI can reduce polys  
+\-It can also generate UV’s and textures  
+\-These AI’s can export GLB, FBX, OBJ, STL  
+\-Has the fastest workflow  
+\-Least control but is good for prototyping
+
+\-Pixyz cannot rig, skin, or create maps  
+\-Pixyz can play animations but can’t edit them  
+\-Pixyz can only import and export animations  
+\-Animation editing must be done in Blender or Maya  
+\-Pixyz is mainly a conversion and optimization tool
+
+**TESTING:**
+
+KIRI ENGINE:  
+\-Tried to do that LiDar scan option but says my phone don’t have a LiDar sensor  
+\-I had to only test the PHOTO SCAN option but couldn’t do the ROOM SCAN, SCENE SCAN, and OBJECT CAPTURE option  
+\-Photo scan is only good for scanning objects using photogrammetry  
+\-Processing was fast since I’m on internet at home   
+\-Processing failed when scanning the room because photo scan is for objects  
+**\-Regular iphones don’t have LiDar sensors built in their camera modules**  
+**\-Only iphone 12 pro/pro max and newer pro/pro max models include LiDar**  
+\-I exported the FBX and brought it to Blender
+
+SCANIVERSE:  
+\-There’s 3 capture modes for mesh  
+\-The fastest capture mode has quicker processing, but heavily reduced quality  
+\-The area option has increased quality, but slower processing speed  
+\-The detail option has quick processing speed, but it’s only good for objects with textures as stated  
+\-It’s not really good for spaces like rooms as it blacked out most of the ceiling  
+\-There’s a splat option as well  
+\-Not really good  
+\-You can enhance the mesh and it increases the quality  
+\-Some parts are really clear and some parts are pixelish  
+\-While scanning the room with this app, it let me know which areas needed to be scanned  
+\-I exported it though gmail and downloaded it and imported the OBJ of your room to Blender  
+\-I also imported the FBX to Blender but it was sent to gmail by mail drop
+
+3D SCANNER APP:  
+\-Can’t test it because I have to pay  
+\-It gives a 7-day trial
+
+REALITYSCAN  
+\-Only good for object scanning, not for big spaces like room ceiling, walls  
+\-The app lets you know what parts of your scan needs scanning  
+\-The mobile app lets me export OBJ and USDZ only  
+\-I exported the OBJ and imported it to Blender  
+\-For the FBX file, I converted that OBJ to a separate FBX file in Blender
+
+POLYCAM  
+While using the app, the only successful capture did a decent job. There are some empty spaces that the camera failed to collect but it could've been because I didn’t catch all the angles. The 3 other captures did a horrible job though. In my opinion I think the object needs to be simple and not too complex with good to great lighting in a clear environment. It requires the internet and can take some time for the scans to process. It can take up to at least 10 minutes but it took me a couple of minutes.  
+\-Good for objects and objects with textures making it ideal for 3D assets  
+\-It decent for small areas  
+\-Can’t export to blender because it requires paid subscription for file formats
