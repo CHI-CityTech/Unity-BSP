@@ -46,3 +46,4 @@ Three primary workflows are proposed, varying in source data and optimization le
    * **Pipeline:** AI Tools (Meshy, Luma AI) $\\rightarrow$ Unity.[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit)  
    * **Analysis:** This is the **fastest workflow** for generating or enhancing 3D models. AI can handle poly reduction and generate UVs/textures. It is best suited for prototyping due to offering the least control over the final geometry.[1](https://docs.google.com/document/d/1HNeGzajTROzYAehrWHzndxrEasepNs7gf_7EesUlaz4/edit)
 
+	**Conclusion: I’m looking to use Blender as a conversion tool and optimization and Scaniverse for scanning and creating the 3D models.** 
