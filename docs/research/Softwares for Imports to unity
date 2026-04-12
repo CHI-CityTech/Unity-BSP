@@ -1,4 +1,3 @@
-  
 **PolyCam:**  
 Polycam is an AI-powered 3D scanning app that uses LiDAR or photos to create detailed 3D models from mobile devices
 
@@ -193,3 +192,10 @@ While using the app, the only successful capture did a decent job. There are som
 \-Good for objects and objects with textures making it ideal for 3D assets  
 \-It decent for small areas  
 \-Can’t export to blender because it requires paid subscription for file formats
+
+**PHOTOGRAMMETRY AND LIDAR:**  
+\-Photogrammetry is when your camera takes overlapping photos from different angles  
+\-LiDar uses a laser sensor to measure actual depth in real time, like continuous scanning  
+\-There are some apps that behave like they have LiDar but won’t use it if you don’t have the sensor built in  
+\-Scaniverse is one of those apps that made me think it was using LiDar  
+\-This app has LiDar features hidden until it detects LiDar and you activate it in the settings  
