@@ -48,6 +48,10 @@ How to use this repository
 - Propose changes via GitHub: open an issue for major changes or submit a
 	pull request for small edits to documentation.
 
+**External Links**  
+
+Use teh materials ithat can be found in the [Documentary Repository]( https://github.com/CHI-CityTech/Documentary) to identify Puppet assets. In particular look at teh [Spring 2024](https://www.dropbox.com/scl/fo/7scjon5legivqvy4bbaat/h?rlkey=9bdykvv5l9jpui8s49vddvgho&dl=0)  Dropbox links. THis will take you to the shadow puppet components that can be input into Unity
+
 Next recommended actions
 -
 - Standardize document metadata (YAML front-matter) and create `docs/index.md`
